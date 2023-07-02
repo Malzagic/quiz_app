@@ -1,5 +1,5 @@
-class QuizQuestions {
-  const QuizQuestions(this.text, this.answers);
+class QuizQuestion {
+  const QuizQuestion(this.text, this.answers);
 
   final String text;
   final List<String> answers;
@@ -7,7 +7,6 @@ class QuizQuestions {
   List<String> get shuffledAnswers {
     final shuffledList = List.of(answers);
     shuffledList.shuffle();
-
     return shuffledList;
   }
 }

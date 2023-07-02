@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class QuestionIndentifier extends StatelessWidget {
-  const QuestionIndentifier({
+class QuestionIdentifier extends StatelessWidget {
+  const QuestionIdentifier({
     super.key,
     required this.isCorrectAnswer,
     required this.questionIndex,
@@ -13,7 +13,6 @@ class QuestionIndentifier extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final questionNumber = questionIndex + 1;
-
     return Container(
       width: 30,
       height: 30,
