@@ -20,7 +20,7 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
   var currentQuestionIndex = 0;
 
   void answerQuestion(String selectedAnswer) {
-    widget.onSelectAnswer('...');
+    widget.onSelectAnswer(selectedAnswer);
 
     setState(() {
       currentQuestionIndex++;
@@ -48,13 +48,13 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
               ),
               textAlign: TextAlign.center,
             ),
-            ...currentQuestion.getShuffledAnswers().map((item) {
+            ...currentQuestion.shuffledAnswers.map((answer) {
               return Padding(
                 padding: const EdgeInsets.only(top: 10.0),
                 child: AnswerButton(
-                  answerText: item,
+                  answerText: answer,
                   onTap: () {
-                    answerQuestion(item);
+                    answerQuestion(answer);
                   },
                 ),
               );

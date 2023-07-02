@@ -19,11 +19,14 @@ class StartScreen extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.only(top: 30.0),
-            child: Text(
-              'Learn Flutter the fun way!',
-              style: GoogleFonts.lato(
-                color: const Color.fromARGB(255, 170, 99, 237),
-                fontSize: 24,
+            child: Center(
+              child: Text(
+                'Learn Flutter the fun way!',
+                textAlign: TextAlign.center,
+                style: GoogleFonts.lato(
+                  color: const Color.fromARGB(255, 170, 99, 237),
+                  fontSize: 24,
+                ),
               ),
             ),
           ),
